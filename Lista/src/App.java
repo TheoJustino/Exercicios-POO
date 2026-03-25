@@ -9,6 +9,9 @@ public class App {
 
         listaCarros.add(new Carro("Marca1", "Modelo1", 2015));
         listaCarros.add(new Carro("Marca2", "Modelo2", 2016));
+        listaCarros.add(new Carro("Marca3", "Modelo3", 2017));
+        listaCarros.add(new Carro("Marca4", "Modelo4", 2018));
+        listaCarros.add(new Carro("Marca5", "Modelo5", 2019));
 
         for (Carro car : listaCarros){
             App.exibirCarro(car);
