@@ -1,23 +1,30 @@
+
+import java.util.ArrayList;
+import java.util.List;
+
 public class App {
     public static void main(String[] args) throws Exception {
-        Carro car = new Carro();
-        car.marca = "Marca1";
-        car.modelo = "Modelo1";
-        car.ano = 2015;
+        
+        List<Carro> listaCarros = new ArrayList<>();
 
-        System.out.println("Carro 1:");
+        listaCarros.add(new Carro("Marca1", "Modelo1", 2015));
+        listaCarros.add(new Carro("Marca2", "Modelo2", 2016));
+
+        for (Carro car : listaCarros){
+            App.exibirCarro(car);
+            System.out.println("Idade do carro: " + App.idadeDoCarro(car));
+        }
+    }
+    public static void exibirCarro(Carro car){
+        // Esse método não retorna valor algum pois é um método void, apenas executa uma ação
+        System.out.println("Carro:");
         System.out.println(car.marca);
         System.out.println(car.modelo);
         System.out.println(car.ano);
+    }
 
-        Carro car2 = new Carro();
-        car2.marca = "Marca2";
-        car2.modelo = "Modelo2";
-        car2.ano = 2016;
-
-        System.out.println("Carro 2:");
-        System.out.println(car2.marca);
-        System.out.println(car2.modelo);
-        System.out.println(car2.ano);
+    public static int idadeDoCarro(Carro car){
+        // Esse método retorna o valor da idade do carro
+        return 2026 - car.ano;
     }
 }
