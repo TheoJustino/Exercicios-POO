@@ -35,6 +35,19 @@ public class App {
             App.exibirCarro(car);
             System.out.println("Idade do carro: " + App.idadeDoCarro(car));
         }
+
+        System.out.println("Total de carros: " + Carro.totalCarros);
+
+        /* 
+        Exercício 7
+        Porque atributos static são únicos para a classe, 
+        ou seja, todos os objetos compartilham desse atributo
+        e não é um atributo em que cada objeto possui um valor 
+        distinto, enquanto os atributos de instância serve para 
+        valores que precisam ser únicos de cada objeto criado 
+        na classe, como o nome. É como se atributos static são 
+        da classe, enquanto atributos de instância são atributos dos objetos
+        */
     }
     public static void exibirCarro(Carro car){
         // Esse método não retorna valor algum pois é um método void, apenas executa uma ação
