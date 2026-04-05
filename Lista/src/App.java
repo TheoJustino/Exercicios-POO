@@ -13,6 +13,13 @@ public class App {
         listaCarros.add(new Carro("Marca4", "Modelo4", 2018));
         listaCarros.add(new Carro("Marca5", "Modelo5", 2027));
 
+        /* 
+        Vantagens de utilizar construtores: 
+        Permite criar um objeto com todos os atributos em um estado válido
+        Também deixa o código mais organizado e limpo, pois
+        evita a chamada de vários setters para a criação de um único objeto
+        */
+       
         for (Carro car : listaCarros){
             App.exibirCarro(car);
             System.out.println("Idade do carro: " + App.idadeDoCarro(car));
