@@ -14,10 +14,21 @@ public class App {
         listaCarros.add(new Carro("Marca5", "Modelo5", 2027));
 
         /* 
+        Exercício 5
         Vantagens de utilizar construtores: 
         Permite criar um objeto com todos os atributos em um estado válido
         Também deixa o código mais organizado e limpo, pois
         evita a chamada de vários setters para a criação de um único objeto
+        */
+
+        listaCarros.add(new Carro());
+
+        /* 
+        Exercício 6
+        A diferença entre um construtor com e sem parâmetros
+        é que quanto tem parâmetros, é necessário dar valores a eles
+        no momento de criação do objeto, porém pode ter valores personalizados, 
+        não é fixo, enquanto o construtor sem parâmetros tem valores padrão 
         */
        
         for (Carro car : listaCarros){

@@ -9,6 +9,12 @@ public class Carro {
         setAno(ano);
     }
 
+    Carro(){
+        this.marca = "Desconhecido";
+        this.modelo = "Desconhecido";
+        this.ano = 0;
+    }
+
     public String getMarca(){
         return marca;
     }
@@ -36,5 +42,4 @@ public class Carro {
         }
         this.ano = ano;
     }
-
 }
