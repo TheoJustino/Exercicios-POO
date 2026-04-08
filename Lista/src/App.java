@@ -36,7 +36,7 @@ public class App {
             System.out.println("Idade do carro: " + App.idadeDoCarro(car));
         }
 
-        System.out.println("Total de carros: " + Carro.totalCarros);
+        Carro.imprimirTotal();
 
         /* 
         Exercício 7

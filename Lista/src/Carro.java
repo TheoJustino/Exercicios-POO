@@ -18,6 +18,21 @@ public class Carro {
         totalCarros ++;
     }
 
+    static void imprimirTotal(){
+        System.out.println("Total de carros: " + Carro.totalCarros);
+        System.out.println(modelo); 
+        /* 
+        Exercício 8
+        b) O System.out.println(modelo); dá erro de
+        compilação pois um método static não consegue 
+        acessar um atributo de instância diretamente.
+        c) Isso acontece pois o método static não
+        está associado a nenhum objeto específico,
+        então ele não sabe onde ele deve acessar
+        o atributo modelo.
+        */ 
+    }
+
     public String getMarca(){
         return marca;
     }
