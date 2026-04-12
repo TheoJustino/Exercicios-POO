@@ -57,6 +57,34 @@ public class App {
         por isso quando há uma tentativa de alteração desse valor, 
         mostra erro e o valor da váriavel continua sendo o mesmo.
         */
+        
+        if (true) {
+            int x = 10;
+        }
+        System.out.println(x);
+
+        /* 
+        Exercício 10 
+        A) if (true) {
+            int x = 10;
+        }
+        System.out.println(x);
+        Isso dá erro, porque a váriavel x é local e não
+        funciona fora do bloco em que está, que nesse 
+        caso é o if. 
+        
+        B) if (true) {
+            int x = 10;
+            System.out.println(x);
+        }
+        Essa seria a versão correta, já que agora o print
+        da variavel x está dentro do if.
+        
+        C) Escopo é a área do código onde uma variável pode ser acessada.
+        A variável x foi declarada dentro do bloco do if, então seu escopo
+        é limitado a esse bloco. Por isso, ela não pode ser acessada fora
+        do if, pois deixa de existir após o término do bloco.
+        */
     }
     
     public static void exibirCarro(Carro car){
