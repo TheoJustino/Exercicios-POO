@@ -48,7 +48,17 @@ public class App {
         na classe, como o nome. É como se atributos static são 
         da classe, enquanto atributos de instância são atributos dos objetos
         */
+
+        Carro.ANO_PRIMEIRO_CARRO = 1900;
+        /*
+        Exercício 9
+        O final faz com que uma váriavel ou um atributo tenha um 
+        valor fixo que não pode ser alterado depois de inicializado, 
+        por isso quando há uma tentativa de alteração desse valor, 
+        mostra erro e o valor da váriavel continua sendo o mesmo.
+        */
     }
+    
     public static void exibirCarro(Carro car){
         // Esse método não retorna valor algum pois é um método void, apenas executa uma ação
         System.out.println("Carro:");

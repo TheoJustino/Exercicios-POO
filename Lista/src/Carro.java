@@ -3,6 +3,7 @@ public class Carro {
     private String modelo;
     private int ano;
     static int totalCarros = 0;
+    static final int ANO_PRIMEIRO_CARRO = 1886;
 
     Carro(String marca, String modelo, int ano){
         this.marca = marca;
@@ -54,7 +55,7 @@ public class Carro {
     }
 
     public void setAno(int ano) {
-        if (ano < 1886 || ano > 2026) {
+        if (ano < ANO_PRIMEIRO_CARRO || ano > 2026) {
             System.out.println("Erro: o ano deve estar entre 1886 e 2026");
             return;
         }
